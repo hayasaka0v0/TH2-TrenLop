@@ -1,0 +1,34 @@
+<!-- Cho một cấu trúc HTML như bên dưới, khi click button sẽ thêm một item bên trong danh
+sách đã cho. -->
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Học web chuẩn</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+ $(function(){
+ /* Code viết ở đây ↓ */
+ $("button").click(function(){
+    var newItem = $("<li>new items</li>")
+        newItem.appendTo("#list");
+        //$("#list").append(newItem); giong nhau
+
+ });
+ });
+</script>
+</head>
+<body>
+<ul id="list">
+ <li>item 1</li>
+ <li>item 2</li>
+ <li>item 3</li>
+ <li>item 4</li>
+ <li>item 5</li>
+ <li>item 6</li>
+ <li>item 7</li>
+</ul>
+<button type="button">Add</button>
+</body>
+</html>
